@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregable</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/logo blanco.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- -------------------------------------------------------------------------------------- -->
+  <!--? navbar init -->
+  <nav class="navbar__init">
+    <label for="checkMenuLeft" class="navbar__menuLeft"><i class="fa-solid fa-bars"></i></label>
+    <label><img src="/img/logo_nombre.png" alt="Logo_Academlo" class="navbar__imgLogo"></label>
+    <label for="checkMenuRight" class="navbar__menuRight">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="counter"></span>
+    </label>
+  </nav>
+  <!-- -------------------------------------------------------------------------------------- -->
+  <!-- ? Controladores de los menu y modales -->
+  <input type="checkbox" id="checkModal" class="menu1">
+  <input type="checkbox" id="checkMenuRight" class="menu2">
+  <input type="checkbox" id="checkMenuLeft" class="menu3">
+  <!-- -------------------------------------------------------------------------------------- -->
+  <!--?--------------- Header Left Menu ------------------>
+  <header class="header__leftMenu">
+    <div class="header__contentMenu">
+      <div class="panel__container">
+        <label for="checkMenuLeft" class="label__title btn__home">
+          <span class="panel__title">Home</span>
+        </label>
+        <input type="checkbox" id="checkDropdown" class="menuDropdown">
+        <label for="checkDropdown" class="label__title">
+          <span class="panel__title">Category</span>
+          <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+        </label>
+        <div class="content">
+          <ul class="content__items">
+            <label for="checkMenuLeft" class="content__list">Todos</label>
+            <label for="checkMenuLeft" class="content__list">Camisetas</label>
+            <label for="checkMenuLeft" class="content__list">Hoddies</label>
+            <label for="checkMenuLeft" class="content__list">Sweater</label>
+          </ul>
+        </div>
+        <label  class="label__title">
+          <span class="panel__title">About</span>
+        </label>
+        <label  class="label__title">
+          <span class="panel__title">Contact</span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <label for="checkMenuLeft" class="header__exitLeftMenu"></label>
+  <!--?--------------- Header Modal ---------------------->
+  <header class="header__modal" id="modal">
+    <div class="header__content">
+
+    </div>
+    <label for="checkModal" class="header__exitModal"></label>
+  </header>
+  <!--?-------------- Header Right Menu ------------------>
+  <header class="header__rightMenu" id="cardShopping">
+    <div class="header__contentShopping"></div>
+    <div class="menu__cart">
+      <div class="cart__products"></div>
+      <div class="cart__total">
+        <div class="cart__total__info">
+          <div class="info__amount">Cantidad: </div>
+          <div class="info__Total">Total: </div>
+          <button class="btn__buy">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <label for="checkMenuRight" class="header__exitRightMenu"></label>
+  <!-- -------------------------------------------------------------------------------------- -->
+  <!--? main   -->
+  <main>
+    <section id="products__container">
+      <label for="checkModal" class="allProducts"></label>
+    </section>
+  </main>
+  <!-- -------------------------------------------------------------------------------------- -->
+  <!--? footer -->
+  <footer class="footer__finish">
+    <ul class="footer__items">
+      <a class="footer__link" href="#">
+        <li class="footer__list"><i class="fa-brands fa-facebook"></i></li>
+      </a>
+      <a class="footer__link" href="#">
+        <li class="footer__list"><i class="fa-brands fa-slack"></i></li>
+      </a>
+      <a class="footer__link" href="#">
+        <li class="footer__list"><i class="fa-brands fa-telegram"></i></li>
+      </a>
+      <a class="footer__link" href="#">
+        <li class="footer__list"><i class="fa-brands fa-github"></i></li>
+      </a>
+      <a class="footer__link" href="#">
+        <li class="footer__list"><i class="fa-brands fa-linkedin"></i></li>
+      </a>
+    </ul>
+  </footer>
+</body>
+
+</html>
